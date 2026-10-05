@@ -1,0 +1,65 @@
+{
+  "seed": 42,
+  "rows": 7043,
+  "features": [
+    "Gender",
+    "Senior Citizen",
+    "Partner",
+    "Dependents",
+    "Tenure Months",
+    "Phone Service",
+    "Multiple Lines",
+    "Internet Service",
+    "Online Security",
+    "Online Backup",
+    "Device Protection",
+    "Tech Support",
+    "Streaming TV",
+    "Streaming Movies",
+    "Contract",
+    "Paperless Billing",
+    "Payment Method",
+    "Monthly Charges",
+    "Total Charges"
+  ],
+  "selected_model": "Random forest",
+  "validation_threshold": 0.29000000000000004,
+  "rf_parameters": {
+    "model__max_depth": 12,
+    "model__min_samples_leaf": 8
+  },
+  "bootstrap_95_intervals": {
+    "roc_auc": [
+      0.8307453625799588,
+      0.8730745063180486
+    ],
+    "average_precision": [
+      0.6078129586962621,
+      0.7076975594088315
+    ]
+  },
+  "top_20_percent_capture": 0.5026737967914439,
+  "total_charges_missing": 11,
+  "dataset_sha256": "bfd6e733055b7557884cb33bcbb8d5e5d628c5be339fbe58bea0701da9a25de8",
+  "versions": {
+    "python": "3.12.14",
+    "sklearn": "1.9.1",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "matplotlib": "3.11.2"
+  },
+  "splits": {
+    "train": {
+      "rows": 4225,
+      "churn_rate": 0.26532544378698225
+    },
+    "validation": {
+      "rows": 1409,
+      "churn_rate": 0.2654364797728886
+    },
+    "test": {
+      "rows": 1409,
+      "churn_rate": 0.2654364797728886
+    }
+  }
+}
